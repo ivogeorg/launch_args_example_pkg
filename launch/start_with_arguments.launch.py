@@ -23,10 +23,10 @@ def generate_launch_description():
             output='screen',
             emulate_tty=True,
             arguments=[
-                "-timer_period_message", 
+                "-timer_period_message",                            # what is this?
                 launch.substitutions.LaunchConfiguration('msg_A'),
                 launch.substitutions.LaunchConfiguration('msg_B'),
-                "-timer_period", 
+                "-timer_period",                                    # what is this?
                 launch.substitutions.LaunchConfiguration('timer_period')
             ]
         ),
