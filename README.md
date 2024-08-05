@@ -137,17 +137,18 @@ def generate_launch_description():
 ```  
 Probably has to do with substitutions.  
 
-6. One can provide all declared arguments, not just the reqiured ones:
+6. One can provide all declared arguments, not just the reqiured ones:  
 ```
-user:~/ros2_ws$ ros2 launch launch_args_example_pkg start_with_arguments.launch.py msg_A:="How now..." msg_B:="Brown cow!" timer_period:=0.7
-[INFO] [launch]: All log files can be found below /home/user/.ros/log/2024-08-05-05-37-41-867593-1_xterm-1892
-[INFO] [launch]: Default logging verbosity is set to INFO
-[INFO] [launch.user]: How now...
-[INFO] [launch.user]: Brown cow!
-[INFO] [launch.user]: 0.7
-[INFO] [arguments_examples_demo-1]: process started with pid [1894]
-[arguments_examples_demo-1] [INFO] [1722836262.709246216] [dummy_arguments_example]: --- How now... ---
-[arguments_examples_demo-1] [INFO] [1722836263.409235554] [dummy_arguments_example]: --- Brown cow! ---
-[arguments_examples_demo-1] [INFO] [1722836264.109235038] [dummy_arguments_example]: --- How now... ---
-[arguments_examples_demo-1] [INFO] [1722836264.809238115] [dummy_arguments_example]: --- Brown cow! ---
+user:~/ros2_ws$ ros2 launch launch_args_example_pkg start_with_arguments.launch.py msg_A:="How now..." msg_B:="Brown cow!" timer_period:=0.7  
+[INFO] [launch]: All log files can be found below /home/user/.ros/log/2024-08-05-05-37-41-867593-1_xterm-1892  
+[INFO] [launch]: Default logging verbosity is set to INFO  
+[INFO] [launch.user]: How now...  
+[INFO] [launch.user]: Brown cow!  
+[INFO] [launch.user]: 0.7  
+[INFO] [arguments_examples_demo-1]: process started with pid [1894]  
+[arguments_examples_demo-1] [INFO] [1722836262.709246216] [dummy_arguments_example]: --- How now... ---  
+[arguments_examples_demo-1] [INFO] [1722836263.409235554] [dummy_arguments_example]: --- Brown cow! ---  
+[arguments_examples_demo-1] [INFO] [1722836264.109235038] [dummy_arguments_example]: --- How now... ---  
+[arguments_examples_demo-1] [INFO] [1722836264.809238115] [dummy_arguments_example]: --- Brown cow! ---  
 ```
+
